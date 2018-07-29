@@ -1,0 +1,147 @@
+h1,
+h2 {
+  color: teal;
+}
+.fa-paint-brush {
+  color: teal;
+}
+body {
+  text-align: center;
+  background-image: url("https://i.stack.imgur.com/p9mUO.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+hr {
+  border: 0;
+  width: 800px;
+  border-top: 1px teal;
+  border-bottom: 1px teal;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 70px;
+  margin: 0.2em;
+  color: black;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: teal;
+}
+
+span {
+  color: black;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: teal;
+  font-weight: bolder;
+  font-size: 20px;
+}
+h2 {
+  font-family: "Orbitron", sans-serif;
+  margin: 1em 0 0.25em;
+  color: black;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: teal;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+
+input[type="number"] {
+  width: 6em;
+}
+
+.x-stitch {
+  -webkit-clip-path: polygon(
+    13% 0,
+    0 12%,
+    40% 49%,
+    0 89%,
+    10% 100%,
+    51% 60%,
+    90% 100%,
+    100% 89%,
+    63% 49%,
+    100% 9%,
+    89% 0,
+    52% 41%
+  );
+  clip-path: polygon(
+    13% 0,
+    0 12%,
+    40% 49%,
+    0 89%,
+    10% 100%,
+    51% 60%,
+    90% 100%,
+    100% 89%,
+    63% 49%,
+    100% 9%,
+    89% 0,
+    52% 41%
+  );
+}
+
+.forward-stitch {
+  -webkit-clip-path: polygon(90% 0, 100% 10%, 11% 100%, 0 89%);
+  clip-path: polygon(90% 0, 100% 10%, 11% 100%, 0 89%);
+}
+
+.back-stitch {
+  -webkit-clip-path: polygon(0 11%, 10% 0, 100% 89%, 89% 100%);
+  clip-path: polygon(0 11%, 10% 0, 100% 89%, 89% 100%);
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+    /*    display: flex;
+      justify-content: center;*/
+    align-items: center;
+  }
+  #pixelCanvas,
+  #pixelCanvas * {
+    visibility: visible;
+  }
+  #pixelCanvas {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    align-content: center;
+  }
+
+  body {
+    background-image: none;
+    -webkit-print-color-adjust: exact;
+  }
+}

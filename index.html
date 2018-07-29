@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sal's Pixel Art Maker</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
+</head>
+
+<body>
+  <h1>
+    <class="title">Sal's Pixel <i class="fas fa-paint-brush"></i> Art Maker</h1>
+  <hr>
+
+  <h2>Choose Grid Size</h2>
+  <form id="sizePicker">
+    <span>Grid Height:</span>        <input type="number" id="inputHeight" name="height" min="1" value="1"> <span>Grid Width:</span>        <input type="number" id="inputWidth" name="width" min="1" value="1">
+    <button id="submit-button" name="button">Submit</button>
+  </form>
+
+  <h2>Pick A Color</h2>
+  <input type="color" id="colorPicker">
+
+  <h2>Pick a Stitch Type</h2>
+  <select id="stitch-type" name="stitch-type">
+        <option value="x-stitch" selected>Cross Stitch</option>
+        <option value="forward-stitch">Forward Stitch</option>
+        <option value="back-stitch">Back Stitch</option>
+        <option value="fill">fill</option>
+    </select>
+
+  <h2>Design Canvas</h2>
+  <table id="pixelCanvas"></table>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
